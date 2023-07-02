@@ -1,4 +1,4 @@
-const process = require('process')
+const { crawlPage } = require('./crawl')
 
 function main () {
   const args = process.argv.slice(2)
@@ -12,6 +12,7 @@ function main () {
   }
   const baseURL = args[0]
   console.log(`Crawler is starting at ${baseURL}...`)
+  crawlPage(baseURL)
 }
 
 main()
