@@ -25,7 +25,7 @@ async function crawlPage (baseURL, currentURL, pages) {
   if (pages.has(normalURL)) {
     pages.set(normalURL, pages.get(normalURL) + 1)
     return pages
-  } else pages.set(normalURL, 1)
+  } else pages.set(normalURL, 0)
   console.log(`requesting ${normalURL}`)
   let response
   try {
