@@ -1,4 +1,4 @@
-import { AbstractCrawler } from './crawlUtils'
+import { AbstractCrawler } from './crawlUtils.js'
 
 export default class ConcurrentCrawler extends AbstractCrawler {
   public async crawlPage (
