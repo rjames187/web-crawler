@@ -1,5 +1,4 @@
-const { test, expect } = require('@jest/globals')
-const { normalizeURL, getURLsFromHTML } = require('./crawl.js')
+import { normalizeURL, getURLsFromHTML } from './crawl.js'
 
 const NORMAL_URL = 'http://wagslane.dev/path'
 

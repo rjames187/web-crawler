@@ -1,5 +1,5 @@
-const { crawlPage } = require('./crawl')
-const { printReport } = require('./report')
+import { crawlPage } from './crawl.js'
+import { printReport } from './report.js'
 
 async function main () {
   const args = process.argv.slice(2)

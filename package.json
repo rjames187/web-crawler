@@ -2,11 +2,12 @@
   "name": "web-crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "node dist/main.js",
     "test": "jest"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,6 +18,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@types/jsdom": "^21.1.1",
     "jsdom": "^22.1.0"
   }
 }
