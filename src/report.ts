@@ -1,5 +1,6 @@
-function sortPageEntries (arr: [string, number][]) {
+export function sortPageEntries (arr: [string, number][]) {
   arr.sort((a, b) => b[1] - a[1])
+  return arr
 }
 
 export function printReport (pages: Map<string, number>) {
