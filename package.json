@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "start": "node dist/main.js",
-    "test": "jest"
+    "test": "jest --testPathPattern=src/"
   },
   "type": "module",
   "author": "",
