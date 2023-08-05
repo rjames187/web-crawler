@@ -1,4 +1,4 @@
-import { normalizeURL, getURLsFromHTML } from './crawl'
+import { normalizeURL, getURLsFromHTML } from './crawlUtils'
 
 const NORMAL_URL = 'http://wagslane.dev/path'
 

@@ -20,6 +20,24 @@ export function getURLsFromHTML (htmlBody: string, baseURL: string) {
   return res
 }
 
+export abstract class AbstractCrawler {
+  protected baseURL: string
+  protected getURLsFromHTML: (htmlBody: string, baseURL: string) => string[]
+  protected normalizeURL: (url: string) => string
+
+  constructor (baseURL: string) {
+    this.baseURL = baseURL
+    this.getURLsFromHTML = getURLsFromHTML
+    this.normalizeURL = normalizeURL
+  }
+
+  public abstract crawlPage(
+    baseURL: string,
+    currentURL: string,
+    pages: Map<string, number>
+  ): Promise<Map<string, number>>
+}
+
 export async function crawlPage (
   baseURL: string,
   currentURL: string,
